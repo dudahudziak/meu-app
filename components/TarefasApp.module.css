@@ -1,0 +1,39 @@
+.contador {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding: 0.3rem 0.8rem;
+  background: rgba(99, 241, 144, 0.1);
+  color: var(--primary);
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.item {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: 10px;
+  background: #fafefb;
+  animation: entrar 0.25s ease;
+}
+
+@keyframes entrar {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
