@@ -6,8 +6,7 @@ export default createJestConfig({
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   moduleNameMapper: { '^@/(.*)$': '<rootDir>/$1' },
-  testMatch: ['<rootDir>/tests/**/*.test.{ts,tsx}'],
-  collectCoverageFrom: [
+  testMatch: ['**/tests/**/*.test.ts', '**/tests/**/*.test.tsx'],  collectCoverageFrom: [
     'app/page.tsx',
     'components/**/*.tsx',
     'hooks/**/*.ts',
